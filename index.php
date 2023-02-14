@@ -8,7 +8,7 @@
 </head>
 <body>
     <a href="/">Home</a>
-    <a href="?pagina=1">Pagina1</a>
+    <a href="?pagina=tabuada">Tabuada</a>
     <a href="?pagina=2">Pagina2</a>
     <a href="?pagina=3">Pagina3</a>
 
@@ -18,8 +18,8 @@
      if(isset($_GET['pagina'])){
         $pagina = $_GET['pagina'];
         switch($pagina){
-            case '1':
-                require_once './pagina/pagina1.php';
+            case 'tabuada':
+                require_once './pagina/tabuada.php';
                 break;
             case '2':
                 require_once './pagina/pagina2.php';
