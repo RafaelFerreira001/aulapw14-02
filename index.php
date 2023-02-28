@@ -7,12 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="/">Home</a>
+    <a href="/">Menu</a>
+    <a href="?pagina=home">Home</a>
     <a href="?pagina=tabuada">Tabuada</a>
-    <a href="?pagina=2">Pagina2</a>
-    <a href="?pagina=3">Pagina3</a>
+    <a href="?pagina=imc">IMC</a>
+    <a href="?pagina=custviagem">Custo viagem</a>
+    <a href="?pagina=sobre">Sobre</a>
 
-<h1>Pagina Home</h1>
+<h3>Pagina Menu</h3>
     </form>
     <?php
      if(isset($_GET['pagina'])){
@@ -21,14 +23,18 @@
             case 'tabuada':
                 require_once './pagina/tabuada.php';
                 break;
-            case '2':
-                require_once './pagina/pagina2.php';
+            case 'imc':
+                require_once './pagina/imc.php';
                 break;
-            case '3':
-                require_once './pagina/pagina3.php';
+            case 'custviagem':
+                require_once './pagina/custviagem.php';
                 break;
-            default:
-            require_once './pagina/pagina404.php';
+            case 'sobre':
+            require_once './pagina/sobre.php';
+            break;
+            case 'home':
+                require_once './pagina/home.php';
+                break;
         }
         
         

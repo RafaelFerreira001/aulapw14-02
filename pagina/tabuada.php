@@ -1,3 +1,4 @@
+<h1>Pagina Tabuada</h1>
 <form method="post">
     <input type="number" name="input_tab" placeholder="Informe a tabuada desejada">
     <input type="submit" value="Gerar">
